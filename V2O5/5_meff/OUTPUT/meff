@@ -1,0 +1,61 @@
+(base) huhaitao@MacBook-Air-7 5_meff % python fit_effective_mass_from_eigenval.py \
+  --eigenval EIGENVAL \
+  --metadata V2O5_mass_h0p010_vbm465_metadata.json \
+  --cband 57 \
+  --vband 56 \
+  --poscar POSCAR \
+  --field-direct 1 0 0
+Requested field unit vector, Cartesian: [1.00000000e+00 0.00000000e+00 5.63102726e-17]
+
+Fit group CBM, band 57
+center energy from fit [eV]: 2.8075340000
+linear gradient [eV A]: -5.26104e-15 -4.84937e-15 -5.72884e-15
+stationary-point shift from supplied k0 [A^-1]:  1.10064e-15  3.03086e-15  2.13763e-15  norm= 3.868714516021289e-15
+fit RMS error [eV]: 1.00034e-15
+Hessian H [eV A^2]:
+[[4.78000000e+00 8.11987581e-13 7.93039909e-13]
+ [8.11987581e-13 1.60000000e+00 8.22608617e-13]
+ [7.93039909e-13 8.22608617e-13 2.68000000e+00]]
+
+[CBM] conduction/electron
+curvature eigenvalues eta_i [eV A^2]:  1.6  2.68  4.78
+principal masses m_i/m0:  4.7624775  2.8432701  1.5941347
+DOS effective mass (single valley) /m0: 2.7843598
+principal axes as Cartesian column vectors:
+[[-2.55342007e-13 -3.77638052e-13 -1.00000000e+00]
+ [ 1.00000000e+00  7.61542740e-13 -2.55342007e-13]
+ [-7.61523877e-13  1.00000000e+00 -3.77638052e-13]]
+m_parallel along Cartesian x /m0: 1.5941347
+m_parallel along Cartesian y /m0: 4.7624775
+m_parallel along Cartesian z /m0: 2.8432701
+m_parallel along requested field /m0: 1.5941347
+
+Fit group VBM, band 56
+center energy from fit [eV]: 1.1478807037
+linear gradient [eV A]:  1.22278e-02 -2.42379e-15 -1.87212e-15
+stationary-point shift from supplied k0 [A^-1]:  6.84816e-03  9.73142e-18  5.58667e-16  norm= 0.006848164281274212
+fit RMS error [eV]: 2.45676e-07
+Hessian H [eV A^2]:
+[[-1.78555556e+00  3.63930987e-13  3.28487207e-13]
+ [ 3.63930987e-13 -7.03555556e+00  3.75960847e-13]
+ [ 3.28487207e-13  3.75960847e-13 -6.75555556e-01]]
+
+[VBM] valence/hole, using -H_v
+curvature eigenvalues eta_i [eV A^2]:  0.67555556  1.7855556  7.0355556
+principal masses m_i/m0:  11.279552  4.2675592  1.083065
+DOS effective mass (single valley) /m0: 3.7357285
+principal axes as Cartesian column vectors:
+[[ 2.95934421e-13  1.00000000e+00  6.93201880e-14]
+ [ 5.91500773e-14  6.93201880e-14 -1.00000000e+00]
+ [ 1.00000000e+00 -2.95934421e-13  5.91401270e-14]]
+m_parallel along Cartesian x /m0: 4.2675592
+m_parallel along Cartesian y /m0: 1.083065
+m_parallel along Cartesian z /m0: 11.279552
+m_parallel along requested field /m0: 4.2675592
+
+Reduced mass along requested field:
+m_c_parallel/m0 = 1.5941347
+m_v_parallel/m0 = 4.2675592
+m_r_parallel/m0 = 1.160597
+
+
