@@ -1,0 +1,46 @@
+SYSTEM = V2O5 band
+
+# basic setting
+   PREC  = Accurate 
+   ISTART = 1 
+   ICHARG  = 11
+   ENCUT = 500
+   ISMEAR = 0 
+   SIGMA = 0.05
+
+# write flags
+   LWAVE  = .FALSE.
+   LCHARG = .FALSE.
+
+# Electronic Relaxation 1
+   NELM   = 100
+   NELMIN = 5
+ # EDIFFG = -0.01
+   EDIFF  = 1E-05
+ # ISIF   = 2
+
+# Ionic Relaxation
+   NSW    = 0    # scf
+   IBRION = -1   # scf
+
+# DOS related values:
+   EMIN   = -15
+   EMAX   = 15
+   LORBIT = 11   # 开启 PDOS 输出
+   NEDOS  = 3000 # DOS 采样点数
+
+# Electronic Relaxation 2
+   ALGO   = N    # 正常迭代算法
+   LDIAG  = T    # sub-space diagonalisation，用于加快对角化
+   LREAL =  F    # 关闭实空间
+
+#===========others==============
+# SOC
+ #  LSORBIT = .TRUE. # 说是Bi必须开SOC
+ #  GGA_COMPAT=.FALSE.
+
+   LASPH = T     # (Give more accurate total energies and band structure calculations)
+   ADDGRID= .TRUE.        (Increase grid, helps GGA convergence)
+   NWRITE = 1    # OUTCAR 详细程度
+   LPETIM = F    # 是否输出每个子程序消耗的 CPU 时间
+   
