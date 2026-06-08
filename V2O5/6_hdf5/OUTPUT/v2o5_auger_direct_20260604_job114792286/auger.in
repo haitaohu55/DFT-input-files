@@ -1,0 +1,12 @@
+&auger
+nb = 96 ,
+ivbm = 56 ,
+cEIGfile = V2O5.eig ,
+lsoc = .false. ,
+Egap_min = 1.0 ,
+Egap_step = 0.01 ,
+/
+&klist
+T_Kelvin = 300 ,
+density_cm3 = 1E20 ,
+/

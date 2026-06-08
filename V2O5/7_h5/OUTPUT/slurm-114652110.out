@@ -1,0 +1,152 @@
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 4.2.46(2)-release
+   args: Using "$@" for setvars.sh arguments: 
+:: advisor -- latest
+:: ccl -- latest
+:: compiler -- latest
+:: dal -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: dnnl -- latest
+:: dpcpp-ct -- latest
+:: dpl -- latest
+:: inspector -- latest
+:: ipp -- latest
+:: ippcp -- latest
+:: itac -- latest
+:: mkl -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: vtune -- latest
+:: oneAPI environment initialized ::
+ 
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+srun: ROUTE: split_hostlist: hl=h15r2n16 tree_width 0
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+ running   32 mpi-ranks, on    1 nodes
+ distrk:  each k-point on   32 cores,    1 groups
+ distr:  one band on    1 cores,   32 groups
+ vasp.6.5.0 16Dec24 (build Jan 22 2025 16:10:45) complex                        
+  
+ POSCAR found type information on POSCAR O V 
+ POSCAR found :  2 types and      14 ions
+ Reading from existing POTCAR
+ scaLAPACK will be used
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     For optimal performance we recommend to set                             |
+|       NCORE = 2 up to number-of-cores-per-socket                            |
+|     NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).      |
+|     This setting can greatly improve the performance of VASP for DFT.       |
+|     The default, NCORE=1 might be grossly inefficient on modern             |
+|     multi-core architectures or massively parallel machines. Do your        |
+|     own testing! More info at https://www.vasp.at/wiki/index.php/NCORE      |
+|     Unfortunately you need to use the default for GW and RPA                |
+|     calculations (for HF NCORE is supported but not extensively tested      |
+|     yet).                                                                   |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ Reading from existing POTCAR
+ LDA part: xc-table for (Slater+PW92), standard interpolation
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ... GRIDC
+ FFT: planning ... GRID_SOFT
+ FFT: planning ... GRID
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.139323002473E+04    0.13932E+04   -0.74163E+04 11008   0.203E+03
+DAV:   2    -0.972966907960E+02   -0.14905E+04   -0.14848E+04 16512   0.525E+02
+DAV:   3    -0.160262359939E+03   -0.62966E+02   -0.62959E+02 11008   0.135E+02
+DAV:   4    -0.161052034585E+03   -0.78967E+00   -0.78965E+00 16512   0.160E+01
+DAV:   5    -0.161059346844E+03   -0.73123E-02   -0.73123E-02 11264   0.145E+00    0.930E+01
+DAV:   6    -0.150625406729E+03    0.10434E+02   -0.88980E+02 14912   0.122E+02    0.672E+01
+DAV:   7    -0.143601808190E+03    0.70236E+01   -0.13838E+03 16448   0.151E+02    0.565E+01
+DAV:   8    -0.124609035281E+03    0.18993E+02   -0.43961E+01 12512   0.385E+01    0.234E+01
+DAV:   9    -0.117730418485E+03    0.68786E+01   -0.32856E+01 14176   0.255E+01    0.611E+00
+DAV:  10    -0.117594471722E+03    0.13595E+00   -0.73418E-01 11584   0.447E+00    0.495E+00
+DAV:  11    -0.117243225904E+03    0.35125E+00   -0.25322E+00 16320   0.763E+00    0.337E+00
+DAV:  12    -0.117272136021E+03   -0.28910E-01   -0.37802E-01 14816   0.319E+00    0.155E+00
+DAV:  13    -0.117265994690E+03    0.61413E-02   -0.72219E-02 16000   0.134E+00    0.143E+00
+DAV:  14    -0.117240959991E+03    0.25035E-01   -0.75475E-02 16320   0.148E+00    0.869E-01
+DAV:  15    -0.117231977914E+03    0.89821E-02   -0.44076E-02 16352   0.983E-01    0.282E-01
+DAV:  16    -0.117231169141E+03    0.80877E-03   -0.53940E-03 15712   0.345E-01    0.812E-02
+DAV:  17    -0.117231111785E+03    0.57356E-04   -0.15774E-03 16800   0.164E-01    0.485E-02
+DAV:  18    -0.117231094752E+03    0.17033E-04   -0.26705E-04 15008   0.742E-02    0.210E-02
+DAV:  19    -0.117231098380E+03   -0.36279E-05   -0.47302E-05 17824   0.334E-02    0.240E-02
+DAV:  20    -0.117231096999E+03    0.13809E-05   -0.55853E-06 14912   0.128E-02    0.152E-02
+DAV:  21    -0.117231095061E+03    0.19376E-05   -0.17487E-05 14176   0.161E-02    0.149E-03
+DAV:  22    -0.117231095107E+03   -0.45911E-07   -0.38515E-07 11008   0.329E-03    0.154E-03
+DAV:  23    -0.117231095168E+03   -0.61089E-07   -0.16849E-07 16480   0.196E-03    0.443E-04
+DAV:  24    -0.117231095179E+03   -0.10943E-07   -0.12979E-08 12384   0.767E-04    0.316E-04
+DAV:  25    -0.117231095193E+03   -0.14124E-07   -0.10229E-08  7104   0.568E-04    0.224E-04
+DAV:  26    -0.117231095202E+03   -0.87530E-08   -0.19118E-09  5664   0.256E-04
+   1 F= -.11723110E+03 E0= -.11723110E+03  d E =0.000000E+00
+ electron-phonon calculation
+ elph_comm: each k-point on   32 cores,    1 groups
+ elph_comm: one band on    1 cores,   32 groups
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+ Start KPOINTS_OPT (optional k-point list driver)
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+k-point batch [     2 /      2 ] workload [     2 /      2] on node [     1 /      1]
+ ========== interatomic force constants  ============
+ treatment of LR: F
+ ====================================================
+ =========== electron-phonon potential  =============
+ treatment of LR: F
+ shmem: F
+ spin-unpolarized (ispin=1, nrspinors=1, ncdij=1)
+ ====================================================
+ ============== electron-phonon wfs =================
+ fft_mesh:             28          36          96
+ spin-unpolarized (ispin=1, nrspinors=1, ncdij=1)
+ nbands_k':            64
+ nbands_k:              1
+ elph_nbands:          64
+ ====================================================
+k'-point [       1 -        2 /       2]

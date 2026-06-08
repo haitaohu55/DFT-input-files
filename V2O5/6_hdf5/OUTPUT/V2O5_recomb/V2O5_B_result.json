@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "coarse_mesh": [
+      10,
+      10,
+      5
+    ],
+    "dipole_valence_start": 26.0,
+    "electron_mu_ev": 3.3138303669727938,
+    "electron_occupation_sum_per_spin": 8.785924835946586e-05,
+    "fine_mesh": [
+      100,
+      100,
+      50
+    ],
+    "hole_mu_ev": 1.2717878386105932,
+    "hole_occupation_sum_per_spin": 8.785924852267175e-05,
+    "num_wann": 50.0,
+    "scissor_shift_ev": 0.8792920277580205,
+    "spin_degeneracy": 2.0,
+    "volume_a3": 175.7184961179927,
+    "wannier_conduction_count": 20.0,
+    "wannier_valence_count": 30.0
+  },
+  "result": {
+    "b_cm3_s": 8.183980327877325e-22,
+    "b_m3_s": 8.183980327877325e-28,
+    "density_m3": 1e+24,
+    "radiative_rate_m3_s": 8.183980327877324e+20,
+    "transition_sum_s": 1.4380767154738401e-07,
+    "volume_m3": 1.757184961179927e-28
+  }
+}

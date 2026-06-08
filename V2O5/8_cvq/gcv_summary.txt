@@ -1,0 +1,12 @@
+g_cv,nu(q) summary
+q [-0.5,0.5) = [-0.46511628 -0.5         0.        ]
+q [0,1) = [0.53488372 0.5        0.        ]
+initial VBM k = [0.46511628 0.5        0.        ]
+final CBM k = [0. 0. 0.]
+VBAND = 56, CBAND = 57
+
+max |g|^2: nu=19, phonon_meV=66.714060, |g|=4.002518227319e-02 eV, |g|^2=1.602015216002e-03 eV^2
+max absorption |g|^2*Nph at 300 K: nu=5, weight=8.987299286026e-04 eV^2
+max emission |g|^2*(Nph+1) at 300 K: nu=19, weight=1.733271373901e-03 eV^2
+
+table = /Users/huhaitao/Desktop/code/Material/19.V2O5/8_cvq/gcv_table.dat

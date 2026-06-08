@@ -1,0 +1,522 @@
+ ======== Parameters ME_INP =========
+ nb           =          96
+ nr1,  nr2,  nr3  =    0   0   0
+ T_Kelvin     =    300.000000000000     
+ density_cm3  =   1.000000000000000E+020
+ ivbm         =           56
+ cEIGfile     = V2O5.eig                                          
+ ====================================
+setting up k-point grids
+elec grid:    3   3   2
+hole grid:    3   3   2
+writing irreducible k-point list
+... found 18 irreducible k-points
+reading LDA eigenvalues
+calculate Efermi for electrons
+ ========================
+ ecbm  0.228977766511462     
+   1   0.000000000   0.147663343E-83
+   2  10.000000000   0.170086554E+24
+   3   5.000000000   0.146239513E+01
+   4   7.500000000   0.290829055E+23
+   5   6.250000000   0.548933559E+21
+   6   5.625000000   0.461890188E+11
+   7   5.937500000   0.820863689E+16
+   8   6.093750000   0.344485282E+19
+   9   6.171875000   0.650199391E+20
+  10   6.210937500   0.228557182E+21
+  11   6.191406250   0.126495049E+21
+  12   6.181640625   0.913468554E+20
+  13   6.186523437   0.107714361E+21
+  14   6.184082031   0.992412639E+20
+  15   6.185302734   0.103403877E+21
+  16   6.184692383   0.101304283E+21
+  17   6.184387207   0.100268227E+21
+  18   6.184234619   0.997536117E+20
+  19   6.184310913   0.100010635E+21
+  20   6.184272766   0.998820526E+20
+  21   6.184291840   0.999463263E+20
+  22   6.184301376   0.999784764E+20
+  23   6.184306145   0.999945548E+20
+  24   6.184308529   0.100002595E+21
+  25   6.184307337   0.999985747E+20
+  26   6.184307933   0.100000585E+21
+  27   6.184307635   0.999995797E+20
+  28   6.184307784   0.100000082E+21
+calculate cutoff that contains 99% of charge
+  0 kT, density =    0.000000000E+00
+  1 kT, density =    0.000000000E+00
+  2 kT, density =    0.898059763E+20
+  3 kT, density =    0.898059763E+20
+  4 kT, density =    0.898059763E+20
+  5 kT, density =    0.988047292E+20
+  6 kT, density =    0.988047292E+20
+  7 kT, density =    0.988047292E+20
+  8 kT, density =    0.997786893E+20
+writing occupied electron k-points
+... found 4 k-points
+calculate Efermi for holes
+ ========================
+ evbm  0.159344338809686     
+ BANDs (MIN, MAX)
+           1  -2.19044291066844       -2.19023990145163     
+           2  -2.19041173311030       -2.19020103975421     
+           3  -2.19005213248288       -2.18996562398513     
+           4  -2.19001310716489       -2.18993430148625     
+           5  -1.23471321713292       -1.23431553299244     
+           6  -1.23465864371104       -1.23426944512914     
+           7  -1.23448048321117       -1.23407843609404     
+           8  -1.23438803633348       -1.23400051097025     
+           9  -1.23240394573493       -1.23167910783252     
+          10  -1.23189022959754       -1.23051376003091     
+          11  -1.23088102450671       -1.22838835939394     
+          12  -1.23065506873052       -1.22838826712359     
+          13  -1.22852596135871       -1.22809402757461     
+          14  -1.22836433555250       -1.22743954707947     
+          15  -1.22780890116704       -1.22699878181679     
+          16  -1.22764825871489       -1.22695580721573     
+          17 -0.486008334459720      -0.458975458523011     
+          18 -0.483757921787216      -0.456220315400648     
+          19 -0.445007849940553      -0.436378408194054     
+          20 -0.442349923447654      -0.434351504686919     
+          21 -0.437332691198059      -0.432549068725012     
+          22 -0.436335006144476      -0.431895640965784     
+          23 -0.421326184659910      -0.417191799563745     
+          24 -0.421147642379704      -0.416804096418789     
+          25 -0.418326264068368      -0.412423172238688     
+          26 -0.416561485315523      -0.412141678740565     
+          27 -2.078728553254226E-002  5.177845574939425E-004
+          28 -1.989595922104597E-002  5.177862086771373E-004
+          29 -1.207185367911721E-003  1.035762192762157E-002
+          30 -5.765600879827727E-004  1.205769074094489E-002
+          31  4.992088058659114E-003  2.355234566664975E-002
+          32  1.113503512584122E-002  3.326468541485565E-002
+          33  2.146944927393776E-002  6.049883711817480E-002
+          34  2.146972365901391E-002  6.049891647327255E-002
+          35  2.813466540681059E-002  6.469091915081455E-002
+          36  3.480042126818280E-002  6.798444911503447E-002
+          37  3.795193623257492E-002  8.111060474620266E-002
+          38  4.227500281550053E-002  8.160490437764210E-002
+          39  5.784779867354437E-002  8.622914012698038E-002
+          40  5.888408229689138E-002  9.024897148478291E-002
+          41  6.537664504446163E-002  9.429722478063111E-002
+          42  6.673114765877827E-002  9.429736475419151E-002
+          43  7.140296240137069E-002  0.102214335390537     
+          44  7.571762011082687E-002  0.102214528961200     
+          45  8.288796305223696E-002  0.108065271420892     
+          46  8.509242977162212E-002  0.110130797745942     
+          47  0.100452478823698       0.115865981986176     
+          48  0.100452483974739       0.118806403148209     
+          49  0.107531310854866       0.133548480826768     
+          50  0.109560463917802       0.133548625341772     
+          51  0.125504941663976       0.146314892650286     
+          52  0.125504964181380       0.151704133073476     
+          53  0.129377714225214       0.156720583979333     
+          54  0.135945556992856       0.156720994516519     
+          55  0.139457708478815       0.159061559847789     
+          56  0.139458192714939       0.159344338809686     
+ BANDs-EVBM (MIN, MAX)
+           1  -2.19044291066844       -2.19023990145163     
+           2  -2.19041173311030       -2.19020103975421     
+           3  -2.19005213248288       -2.18996562398513     
+           4  -2.19001310716489       -2.18993430148625     
+           5  -1.23471321713292       -1.23431553299244     
+           6  -1.23465864371104       -1.23426944512914     
+           7  -1.23448048321117       -1.23407843609404     
+           8  -1.23438803633348       -1.23400051097025     
+           9  -1.23240394573493       -1.23167910783252     
+          10  -1.23189022959754       -1.23051376003091     
+          11  -1.23088102450671       -1.22838835939394     
+          12  -1.23065506873052       -1.22838826712359     
+          13  -1.22852596135871       -1.22809402757461     
+          14  -1.22836433555250       -1.22743954707947     
+          15  -1.22780890116704       -1.22699878181679     
+          16  -1.22764825871489       -1.22695580721573     
+          17 -0.486008334459720      -0.458975458523011     
+          18 -0.483757921787216      -0.456220315400648     
+          19 -0.445007849940553      -0.436378408194054     
+          20 -0.442349923447654      -0.434351504686919     
+          21 -0.437332691198059      -0.432549068725012     
+          22 -0.436335006144476      -0.431895640965784     
+          23 -0.421326184659910      -0.417191799563745     
+          24 -0.421147642379704      -0.416804096418789     
+          25 -0.418326264068368      -0.412423172238688     
+          26 -0.416561485315523      -0.412141678740565     
+          27 -2.078728553254226E-002  5.177845574939425E-004
+          28 -1.989595922104597E-002  5.177862086771373E-004
+          29 -1.207185367911721E-003  1.035762192762157E-002
+          30 -5.765600879827727E-004  1.205769074094489E-002
+          31  4.992088058659114E-003  2.355234566664975E-002
+          32  1.113503512584122E-002  3.326468541485565E-002
+          33  2.146944927393776E-002  6.049883711817480E-002
+          34  2.146972365901391E-002  6.049891647327255E-002
+          35  2.813466540681059E-002  6.469091915081455E-002
+          36  3.480042126818280E-002  6.798444911503447E-002
+          37  3.795193623257492E-002  8.111060474620266E-002
+          38  4.227500281550053E-002  8.160490437764210E-002
+          39  5.784779867354437E-002  8.622914012698038E-002
+          40  5.888408229689138E-002  9.024897148478291E-002
+          41  6.537664504446163E-002  9.429722478063111E-002
+          42  6.673114765877827E-002  9.429736475419151E-002
+          43  7.140296240137069E-002  0.102214335390537     
+          44  7.571762011082687E-002  0.102214528961200     
+          45  8.288796305223696E-002  0.108065271420892     
+          46  8.509242977162212E-002  0.110130797745942     
+          47  0.100452478823698       0.115865981986176     
+          48  0.100452483974739       0.118806403148209     
+          49  0.107531310854866       0.133548480826768     
+          50  0.109560463917802       0.133548625341772     
+          51  0.125504941663976       0.146314892650286     
+          52  0.125504964181380       0.151704133073476     
+          53  0.129377714225214       0.156720583979333     
+          54  0.135945556992856       0.156720994516519     
+          55  0.139457708478815       0.159061559847789     
+          56  0.139458192714939       0.159344338809686     
+   1   0.000000000   0.317635714E+24
+   2  10.000000000   0.602640981E-73
+   3   5.000000000   0.596830071E+11
+   4   2.500000000   0.144129484E+24
+   5   3.750000000   0.485063452E+23
+   6   4.375000000   0.162746830E+22
+   7   4.687500000   0.106068715E+17
+   8   4.531250000   0.446982421E+19
+   9   4.453125000   0.910966835E+20
+  10   4.414062500   0.401798925E+21
+  11   4.433593750   0.192232065E+21
+  12   4.443359375   0.132437996E+21
+  13   4.448242187   0.109857434E+21
+  14   4.450683594   0.100041998E+21
+  15   4.451904297   0.954654802E+20
+  16   4.451293945   0.977271776E+20
+  17   4.450988770   0.988778714E+20
+  18   4.450836182   0.994582460E+20
+  19   4.450759888   0.997496986E+20
+  20   4.450721741   0.998957422E+20
+  21   4.450702667   0.999688435E+20
+  22   4.450693130   0.100005414E+21
+  23   4.450697899   0.999871272E+20
+  24   4.450695515   0.999962702E+20
+  25   4.450694323   0.100000842E+21
+  26   4.450694919   0.999985561E+20
+  27   4.450694621   0.999996991E+20
+  28   4.450694472   0.100000271E+21
+  29   4.450694546   0.999999848E+20
+calculate cutoff that contains 99% of charge
+  0 kT, density =    0.000000000E+00
+  1 kT, density =    0.000000000E+00
+  2 kT, density =    0.000000000E+00
+  3 kT, density =    0.000000000E+00
+  4 kT, density =    0.000000000E+00
+  5 kT, density =    0.736200798E+20
+  6 kT, density =    0.945851027E+20
+  7 kT, density =    0.945851027E+20
+  8 kT, density =    0.996069058E+20
+writing occupied hole k-points
+... found 10 k-points
+... found 10 irreducible k-points
+writing eeh k4
+ found an Umklapp:       1       4       3       4       2      10
+ found an Umklapp:       1       4       3       4       5      10
+ found an Umklapp:       1       4       3       4       6      10
+ found an Umklapp:       1       4       3       4       9      10
+ found an Umklapp:       1       4       3       4      10      10
+ found an Umklapp:       1       4       4       4       1      10
+ found an Umklapp:       1       4       4       4       3      10
+ found an Umklapp:       1       4       4       4       4      10
+ found an Umklapp:       1       4       4       4       7      10
+ found an Umklapp:       1       4       4       4       8      10
+ found an Umklapp:       2       4       2       4       1      10
+ found an Umklapp:       2       4       2       4       2      10
+ found an Umklapp:       2       4       2       4       3      10
+ found an Umklapp:       2       4       2       4       5      10
+ found an Umklapp:       2       4       2       4       7      10
+ found an Umklapp:       2       4       2       4       9      10
+ found an Umklapp:       2       4       3       4       2      10
+ found an Umklapp:       2       4       3       4       5      10
+ found an Umklapp:       2       4       3       4       6      10
+ found an Umklapp:       2       4       3       4       9      10
+ found an Umklapp:       2       4       3       4      10      10
+ found an Umklapp:       2       4       4       4       1      10
+ found an Umklapp:       2       4       4       4       3      10
+ found an Umklapp:       2       4       4       4       4      10
+ found an Umklapp:       2       4       4       4       7      10
+ found an Umklapp:       2       4       4       4       8      10
+ found an Umklapp:       3       4       1       4       2      10
+ found an Umklapp:       3       4       1       4       5      10
+ found an Umklapp:       3       4       1       4       6      10
+ found an Umklapp:       3       4       1       4       9      10
+ found an Umklapp:       3       4       1       4      10      10
+ found an Umklapp:       3       4       2       4       2      10
+ found an Umklapp:       3       4       2       4       5      10
+ found an Umklapp:       3       4       2       4       6      10
+ found an Umklapp:       3       4       2       4       9      10
+ found an Umklapp:       3       4       2       4      10      10
+ found an Umklapp:       3       4       3       4       2      10
+ found an Umklapp:       3       4       3       4       5      10
+ found an Umklapp:       3       4       3       4       6      10
+ found an Umklapp:       3       4       3       4       9      10
+ found an Umklapp:       3       4       3       4      10      10
+ found an Umklapp:       4       4       1       4       1      10
+ found an Umklapp:       4       4       1       4       3      10
+ found an Umklapp:       4       4       1       4       4      10
+ found an Umklapp:       4       4       1       4       7      10
+ found an Umklapp:       4       4       1       4       8      10
+ found an Umklapp:       4       4       2       4       1      10
+ found an Umklapp:       4       4       2       4       3      10
+ found an Umklapp:       4       4       2       4       4      10
+ found an Umklapp:       4       4       2       4       7      10
+ found an Umklapp:       4       4       2       4       8      10
+ found an Umklapp:       4       4       4       4       1      10
+ found an Umklapp:       4       4       4       4       3      10
+ found an Umklapp:       4       4       4       4       4      10
+ found an Umklapp:       4       4       4       4       7      10
+ found an Umklapp:       4       4       4       4       8      10
+... found 18 eeh k4-points
+writing hhe k4
+ found an Umklapp:       1      10       1      10       1       4
+ found an Umklapp:       1      10       1      10       2       4
+ found an Umklapp:       1      10       1      10       4       4
+ found an Umklapp:       1      10       3      10       1       4
+ found an Umklapp:       1      10       3      10       2       4
+ found an Umklapp:       1      10       3      10       4       4
+ found an Umklapp:       1      10       4      10       1       4
+ found an Umklapp:       1      10       4      10       2       4
+ found an Umklapp:       1      10       4      10       4       4
+ found an Umklapp:       1      10       7      10       1       4
+ found an Umklapp:       1      10       7      10       2       4
+ found an Umklapp:       1      10       7      10       4       4
+ found an Umklapp:       1      10       8      10       1       4
+ found an Umklapp:       1      10       8      10       2       4
+ found an Umklapp:       1      10       8      10       4       4
+ found an Umklapp:       2      10       2      10       1       4
+ found an Umklapp:       2      10       2      10       2       4
+ found an Umklapp:       2      10       2      10       3       4
+ found an Umklapp:       2      10       5      10       1       4
+ found an Umklapp:       2      10       5      10       2       4
+ found an Umklapp:       2      10       5      10       3       4
+ found an Umklapp:       2      10       6      10       1       4
+ found an Umklapp:       2      10       6      10       2       4
+ found an Umklapp:       2      10       6      10       3       4
+ found an Umklapp:       2      10       9      10       1       4
+ found an Umklapp:       2      10       9      10       2       4
+ found an Umklapp:       2      10       9      10       3       4
+ found an Umklapp:       2      10      10      10       1       4
+ found an Umklapp:       2      10      10      10       2       4
+ found an Umklapp:       2      10      10      10       3       4
+ found an Umklapp:       3      10       1      10       1       4
+ found an Umklapp:       3      10       1      10       2       4
+ found an Umklapp:       3      10       1      10       4       4
+ found an Umklapp:       3      10       3      10       1       4
+ found an Umklapp:       3      10       3      10       2       4
+ found an Umklapp:       3      10       3      10       3       4
+ found an Umklapp:       3      10       3      10       4       4
+ found an Umklapp:       3      10       4      10       1       4
+ found an Umklapp:       3      10       4      10       2       4
+ found an Umklapp:       3      10       4      10       3       4
+ found an Umklapp:       3      10       4      10       4       4
+ found an Umklapp:       3      10       5      10       1       4
+ found an Umklapp:       3      10       5      10       2       4
+ found an Umklapp:       3      10       5      10       3       4
+ found an Umklapp:       3      10       5      10       4       4
+ found an Umklapp:       3      10       6      10       1       4
+ found an Umklapp:       3      10       6      10       2       4
+ found an Umklapp:       3      10       6      10       3       4
+ found an Umklapp:       3      10       6      10       4       4
+ found an Umklapp:       3      10       7      10       1       4
+ found an Umklapp:       3      10       7      10       2       4
+ found an Umklapp:       3      10       7      10       4       4
+ found an Umklapp:       3      10       8      10       1       4
+ found an Umklapp:       3      10       8      10       2       4
+ found an Umklapp:       3      10       8      10       4       4
+ found an Umklapp:       4      10       1      10       1       4
+ found an Umklapp:       4      10       1      10       2       4
+ found an Umklapp:       4      10       1      10       4       4
+ found an Umklapp:       4      10       3      10       1       4
+ found an Umklapp:       4      10       3      10       2       4
+ found an Umklapp:       4      10       3      10       3       4
+ found an Umklapp:       4      10       3      10       4       4
+ found an Umklapp:       4      10       4      10       1       4
+ found an Umklapp:       4      10       4      10       2       4
+ found an Umklapp:       4      10       4      10       3       4
+ found an Umklapp:       4      10       4      10       4       4
+ found an Umklapp:       4      10       5      10       1       4
+ found an Umklapp:       4      10       5      10       2       4
+ found an Umklapp:       4      10       5      10       3       4
+ found an Umklapp:       4      10       5      10       4       4
+ found an Umklapp:       4      10       6      10       1       4
+ found an Umklapp:       4      10       6      10       2       4
+ found an Umklapp:       4      10       6      10       3       4
+ found an Umklapp:       4      10       6      10       4       4
+ found an Umklapp:       4      10       7      10       1       4
+ found an Umklapp:       4      10       7      10       2       4
+ found an Umklapp:       4      10       7      10       4       4
+ found an Umklapp:       4      10       8      10       1       4
+ found an Umklapp:       4      10       8      10       2       4
+ found an Umklapp:       4      10       8      10       3       4
+ found an Umklapp:       4      10       8      10       4       4
+ found an Umklapp:       4      10      10      10       1       4
+ found an Umklapp:       4      10      10      10       3       4
+ found an Umklapp:       4      10      10      10       4       4
+ found an Umklapp:       5      10       2      10       1       4
+ found an Umklapp:       5      10       2      10       2       4
+ found an Umklapp:       5      10       2      10       3       4
+ found an Umklapp:       5      10       3      10       1       4
+ found an Umklapp:       5      10       3      10       2       4
+ found an Umklapp:       5      10       3      10       3       4
+ found an Umklapp:       5      10       3      10       4       4
+ found an Umklapp:       5      10       4      10       1       4
+ found an Umklapp:       5      10       4      10       2       4
+ found an Umklapp:       5      10       4      10       3       4
+ found an Umklapp:       5      10       4      10       4       4
+ found an Umklapp:       5      10       5      10       1       4
+ found an Umklapp:       5      10       5      10       2       4
+ found an Umklapp:       5      10       5      10       3       4
+ found an Umklapp:       5      10       5      10       4       4
+ found an Umklapp:       5      10       6      10       1       4
+ found an Umklapp:       5      10       6      10       2       4
+ found an Umklapp:       5      10       6      10       3       4
+ found an Umklapp:       5      10       6      10       4       4
+ found an Umklapp:       5      10       9      10       1       4
+ found an Umklapp:       5      10       9      10       2       4
+ found an Umklapp:       5      10       9      10       3       4
+ found an Umklapp:       5      10      10      10       1       4
+ found an Umklapp:       5      10      10      10       2       4
+ found an Umklapp:       5      10      10      10       3       4
+ found an Umklapp:       6      10       2      10       1       4
+ found an Umklapp:       6      10       2      10       2       4
+ found an Umklapp:       6      10       2      10       3       4
+ found an Umklapp:       6      10       3      10       1       4
+ found an Umklapp:       6      10       3      10       2       4
+ found an Umklapp:       6      10       3      10       3       4
+ found an Umklapp:       6      10       3      10       4       4
+ found an Umklapp:       6      10       4      10       1       4
+ found an Umklapp:       6      10       4      10       2       4
+ found an Umklapp:       6      10       4      10       3       4
+ found an Umklapp:       6      10       4      10       4       4
+ found an Umklapp:       6      10       5      10       1       4
+ found an Umklapp:       6      10       5      10       2       4
+ found an Umklapp:       6      10       5      10       3       4
+ found an Umklapp:       6      10       5      10       4       4
+ found an Umklapp:       6      10       6      10       1       4
+ found an Umklapp:       6      10       6      10       2       4
+ found an Umklapp:       6      10       6      10       3       4
+ found an Umklapp:       6      10       6      10       4       4
+ found an Umklapp:       6      10       8      10       1       4
+ found an Umklapp:       6      10       8      10       3       4
+ found an Umklapp:       6      10       8      10       4       4
+ found an Umklapp:       6      10       9      10       1       4
+ found an Umklapp:       6      10       9      10       2       4
+ found an Umklapp:       6      10       9      10       3       4
+ found an Umklapp:       6      10      10      10       1       4
+ found an Umklapp:       6      10      10      10       2       4
+ found an Umklapp:       6      10      10      10       3       4
+ found an Umklapp:       6      10      10      10       4       4
+ found an Umklapp:       7      10       1      10       1       4
+ found an Umklapp:       7      10       1      10       2       4
+ found an Umklapp:       7      10       1      10       4       4
+ found an Umklapp:       7      10       3      10       1       4
+ found an Umklapp:       7      10       3      10       2       4
+ found an Umklapp:       7      10       3      10       4       4
+ found an Umklapp:       7      10       4      10       1       4
+ found an Umklapp:       7      10       4      10       2       4
+ found an Umklapp:       7      10       4      10       4       4
+ found an Umklapp:       7      10       7      10       1       4
+ found an Umklapp:       7      10       7      10       2       4
+ found an Umklapp:       7      10       7      10       3       4
+ found an Umklapp:       7      10       7      10       4       4
+ found an Umklapp:       7      10       8      10       1       4
+ found an Umklapp:       7      10       8      10       2       4
+ found an Umklapp:       7      10       8      10       3       4
+ found an Umklapp:       7      10       8      10       4       4
+ found an Umklapp:       7      10       9      10       1       4
+ found an Umklapp:       7      10       9      10       2       4
+ found an Umklapp:       7      10       9      10       3       4
+ found an Umklapp:       7      10       9      10       4       4
+ found an Umklapp:       7      10      10      10       1       4
+ found an Umklapp:       7      10      10      10       2       4
+ found an Umklapp:       7      10      10      10       3       4
+ found an Umklapp:       7      10      10      10       4       4
+ found an Umklapp:       8      10       1      10       1       4
+ found an Umklapp:       8      10       1      10       2       4
+ found an Umklapp:       8      10       1      10       4       4
+ found an Umklapp:       8      10       3      10       1       4
+ found an Umklapp:       8      10       3      10       2       4
+ found an Umklapp:       8      10       3      10       4       4
+ found an Umklapp:       8      10       4      10       1       4
+ found an Umklapp:       8      10       4      10       2       4
+ found an Umklapp:       8      10       4      10       3       4
+ found an Umklapp:       8      10       4      10       4       4
+ found an Umklapp:       8      10       6      10       1       4
+ found an Umklapp:       8      10       6      10       3       4
+ found an Umklapp:       8      10       6      10       4       4
+ found an Umklapp:       8      10       7      10       1       4
+ found an Umklapp:       8      10       7      10       2       4
+ found an Umklapp:       8      10       7      10       3       4
+ found an Umklapp:       8      10       7      10       4       4
+ found an Umklapp:       8      10       8      10       1       4
+ found an Umklapp:       8      10       8      10       2       4
+ found an Umklapp:       8      10       8      10       3       4
+ found an Umklapp:       8      10       8      10       4       4
+ found an Umklapp:       8      10       9      10       1       4
+ found an Umklapp:       8      10       9      10       2       4
+ found an Umklapp:       8      10       9      10       3       4
+ found an Umklapp:       8      10       9      10       4       4
+ found an Umklapp:       8      10      10      10       1       4
+ found an Umklapp:       8      10      10      10       2       4
+ found an Umklapp:       8      10      10      10       3       4
+ found an Umklapp:       8      10      10      10       4       4
+ found an Umklapp:       9      10       2      10       1       4
+ found an Umklapp:       9      10       2      10       2       4
+ found an Umklapp:       9      10       2      10       3       4
+ found an Umklapp:       9      10       5      10       1       4
+ found an Umklapp:       9      10       5      10       2       4
+ found an Umklapp:       9      10       5      10       3       4
+ found an Umklapp:       9      10       6      10       1       4
+ found an Umklapp:       9      10       6      10       2       4
+ found an Umklapp:       9      10       6      10       3       4
+ found an Umklapp:       9      10       7      10       1       4
+ found an Umklapp:       9      10       7      10       2       4
+ found an Umklapp:       9      10       7      10       3       4
+ found an Umklapp:       9      10       7      10       4       4
+ found an Umklapp:       9      10       8      10       1       4
+ found an Umklapp:       9      10       8      10       2       4
+ found an Umklapp:       9      10       8      10       3       4
+ found an Umklapp:       9      10       8      10       4       4
+ found an Umklapp:       9      10       9      10       1       4
+ found an Umklapp:       9      10       9      10       2       4
+ found an Umklapp:       9      10       9      10       3       4
+ found an Umklapp:       9      10       9      10       4       4
+ found an Umklapp:       9      10      10      10       1       4
+ found an Umklapp:       9      10      10      10       2       4
+ found an Umklapp:       9      10      10      10       3       4
+ found an Umklapp:       9      10      10      10       4       4
+ found an Umklapp:      10      10       2      10       1       4
+ found an Umklapp:      10      10       2      10       2       4
+ found an Umklapp:      10      10       2      10       3       4
+ found an Umklapp:      10      10       4      10       1       4
+ found an Umklapp:      10      10       4      10       3       4
+ found an Umklapp:      10      10       4      10       4       4
+ found an Umklapp:      10      10       5      10       1       4
+ found an Umklapp:      10      10       5      10       2       4
+ found an Umklapp:      10      10       5      10       3       4
+ found an Umklapp:      10      10       6      10       1       4
+ found an Umklapp:      10      10       6      10       2       4
+ found an Umklapp:      10      10       6      10       3       4
+ found an Umklapp:      10      10       6      10       4       4
+ found an Umklapp:      10      10       7      10       1       4
+ found an Umklapp:      10      10       7      10       2       4
+ found an Umklapp:      10      10       7      10       3       4
+ found an Umklapp:      10      10       7      10       4       4
+ found an Umklapp:      10      10       8      10       1       4
+ found an Umklapp:      10      10       8      10       2       4
+ found an Umklapp:      10      10       8      10       3       4
+ found an Umklapp:      10      10       8      10       4       4
+ found an Umklapp:      10      10       9      10       1       4
+ found an Umklapp:      10      10       9      10       2       4
+ found an Umklapp:      10      10       9      10       3       4
+ found an Umklapp:      10      10       9      10       4       4
+ found an Umklapp:      10      10      10      10       1       4
+ found an Umklapp:      10      10      10      10       2       4
+ found an Umklapp:      10      10      10      10       3       4
+ found an Umklapp:      10      10      10      10       4       4
+... found 18 eeh k4-points

@@ -1,0 +1,65 @@
+SYSTEM = V2O5 g_cv_lambda VBM_to_CBM
+
+# basic setting
+   PREC  = Accurate 
+   ISTART = 1 
+   ICHARG  = 11
+   ENCUT = 500
+   ISMEAR = 0 
+   SIGMA = 0.05
+
+# write flags
+   LWAVE  = .FALSE.
+   LCHARG = .FALSE.
+
+# Electronic Relaxation 1
+   NELM   = 100
+   NELMIN = 5
+ # EDIFFG = -0.01
+   EDIFF  = 1E-05
+ # ISIF   = 2
+
+# Ionic Relaxation
+   NSW    = 0    # scf
+   IBRION = -1   # scf
+   NFREE = 2 
+   POTIM = 0.01
+
+# DOS related values:
+   EMIN   = -15
+   EMAX   = 15
+   LORBIT = 11   # 开启 PDOS 输出
+   NEDOS  = 3000 # DOS 采样点数
+
+# Electronic Relaxation 2
+   ALGO   = N    # 正常迭代算法
+   LDIAG  = T    # sub-space diagonalisation，用于加快对角化
+   LREAL =  F    # 关闭实空间
+
+#===========others==============
+# SOC
+ #  LSORBIT = .TRUE. # 说是Bi必须开SOC
+ #  GGA_COMPAT=.FALSE.
+
+   LASPH = T     # (Give more accurate total energies and band structure calculations)
+   ADDGRID= .TRUE.        (Increase grid, helps GGA convergence)
+   NWRITE = 1    # OUTCAR 详细程度
+   LPETIM = F    # 是否输出每个子程序消耗的 CPU 时间
+
+LMAXMIX = 4      # 元素 V 要加
+
+# Electron-phonon matrix elements
+ELPH_RUN    = .TRUE.
+ELPH_DRIVER = mels
+ELPH_DECOMPOSE = VDPR  # PAW all-electron definition
+ELPH_SELFEN_BAND_START = 56 # 只选初态 VBM 这一条电子带
+ELPH_SELFEN_BAND_STOP  = 56
+ELPH_SELFEN_KPTS = 0.0000000000  0.0000000000  0.0000000000  0.4651162791  0.5000000000  0.0000000000 # 选择 KPOINTS_ELPH 中的全部电子 k 点；20/43 ~= 0.4651162791，可被 KPOINTS 的 43x2x1 网格精确映射。
+ELPH_NBANDS = 57 # KPOINTS_ELPH 上至少要算到 CBM 那条带；32 核并行时 VASP 会把 57 补到 64
+
+ELPH_WF_COMM_OPT = 1 # VASP 6.5.0 electron-phonon 在多 k 点 two-sided 通信下有已知风险；改用 one-sided 通信。
+ISYM = -1 # 完全关闭对称性和 time-reversal 折叠，保证 mels 写出时 k 点一一对应。
+
+
+
+

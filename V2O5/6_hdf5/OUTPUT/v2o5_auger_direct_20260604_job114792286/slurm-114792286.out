@@ -1,0 +1,48 @@
+== materialize k-point inputs ==
+== compile direct Auger tools ==
+make: Entering directory '/public/home/chris_55/codex/v2o5_auger_direct_20260604/bf_auger-master/src/direct'
+rm -f *.o *.mod *.MOD
+make: Leaving directory '/public/home/chris_55/codex/v2o5_auger_direct_20260604/bf_auger-master/src/direct'
+make: Entering directory '/public/home/chris_55/codex/v2o5_auger_direct_20260604/bf_auger-master/src/direct'
+mpiifort -O2 -DMPI -I/public/software/compiler/intel-compiler/2021.3.0/mkl/include/fftw -I/public/software/compiler/intel-compiler/2021.3.0/mkl/include/fftw -c base.F90 -L/public/software/compiler/intel-compiler/2021.3.0/mkl/lib/intel64 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl 
+mpiifort -O2 -DMPI -I/public/software/compiler/intel-compiler/2021.3.0/mkl/include/fftw -I/public/software/compiler/intel-compiler/2021.3.0/mkl/include/fftw -c kgrids.f90 -L/public/software/compiler/intel-compiler/2021.3.0/mkl/lib/intel64 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl 
+mpiifort -O2 -DMPI -I/public/software/compiler/intel-compiler/2021.3.0/mkl/include/fftw -I/public/software/compiler/intel-compiler/2021.3.0/mkl/include/fftw -c energies.F90 -L/public/software/compiler/intel-compiler/2021.3.0/mkl/lib/intel64 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl 
+mpiifort -O2 -DMPI -I/public/software/compiler/intel-compiler/2021.3.0/mkl/include/fftw -I/public/software/compiler/intel-compiler/2021.3.0/mkl/include/fftw -c inpfile.f90 -L/public/software/compiler/intel-compiler/2021.3.0/mkl/lib/intel64 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl 
+mpiifort -O2 -DMPI -I/public/software/compiler/intel-compiler/2021.3.0/mkl/include/fftw -I/public/software/compiler/intel-compiler/2021.3.0/mkl/include/fftw -c klists.F90 -L/public/software/compiler/intel-compiler/2021.3.0/mkl/lib/intel64 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl 
+mpiifort -o klists.x klists.o base.o energies.o kgrids.o inpfile.o \
+	-I/public/software/compiler/intel-compiler/2021.3.0/mkl/include/fftw -L/public/software/compiler/intel-compiler/2021.3.0/mkl/lib/intel64 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl
+mpiifort -O2 -DMPI -I/public/software/compiler/intel-compiler/2021.3.0/mkl/include/fftw -I/public/software/compiler/intel-compiler/2021.3.0/mkl/include/fftw -c me_fft_direct.F90 -L/public/software/compiler/intel-compiler/2021.3.0/mkl/lib/intel64 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl 
+mpiifort -O2 -DMPI -I/public/software/compiler/intel-compiler/2021.3.0/mkl/include/fftw -DEEH -I/public/software/compiler/intel-compiler/2021.3.0/mkl/include/fftw -c -o bf_auger_eeh.o bf_auger.F90 -L/public/software/compiler/intel-compiler/2021.3.0/mkl/lib/intel64 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl 
+mpiifort -o auger_eeh.x me_fft_direct.o bf_auger_eeh.o base.o \
+	kgrids.o inpfile.o -I/public/software/compiler/intel-compiler/2021.3.0/mkl/include/fftw -L/public/software/compiler/intel-compiler/2021.3.0/mkl/lib/intel64 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl
+mpiifort -O2 -DMPI -I/public/software/compiler/intel-compiler/2021.3.0/mkl/include/fftw -I/public/software/compiler/intel-compiler/2021.3.0/mkl/include/fftw -c -o bf_auger_hhe.o bf_auger.F90 -L/public/software/compiler/intel-compiler/2021.3.0/mkl/lib/intel64 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl 
+mpiifort -o auger_hhe.x me_fft_direct.o bf_auger_hhe.o base.o \
+	kgrids.o inpfile.o -I/public/software/compiler/intel-compiler/2021.3.0/mkl/include/fftw -L/public/software/compiler/intel-compiler/2021.3.0/mkl/lib/intel64 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl
+#check_kind : kind.o 
+#me_test : kind.o inpfile.o base.o
+make: Leaving directory '/public/home/chris_55/codex/v2o5_auger_direct_20260604/bf_auger-master/src/direct'
+== QE SCF ==
+== copy SCF save directory into k-point folders ==
+== QE NSCF and pw2wannier for each k point ==
+-- kpoints/k_1
+-- kpoints/k_2
+-- kpoints/k_3
+-- kpoints/k_4
+-- kpoints/k_5
+-- kpoints/k_6
+-- kpoints/k_7
+-- kpoints/k_8
+-- kpoints/k_9
+-- kpoints/k_10
+-- kpoints/k_11
+-- kpoints/k_12
+-- kpoints/k_13
+-- kpoints/k_14
+-- kpoints/k_15
+-- kpoints/k_16
+-- kpoints/k_17
+-- kpoints/k_18
+== build k lists and occupations ==
+== direct Auger eeh ==
+== direct Auger hhe ==
+== summarize ==

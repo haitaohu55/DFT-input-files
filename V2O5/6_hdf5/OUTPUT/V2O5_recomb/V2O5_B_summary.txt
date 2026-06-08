@@ -1,0 +1,33 @@
+V2O5 辐射复合系数计算摘要
+
+结果
+- B = 8.183980327877325e-22 cm^3 s^-1
+- B = 8.183980327877325e-28 m^3 s^-1
+- radiative_rate = 8.183980327877324e20 m^-3 s^-1
+- transition_sum = 1.4380767154738401e-07 s^-1
+
+后处理参数
+- density = 1e18 cm^-3
+- temperature = 300 K
+- target_gap = 2.35 eV
+- refractive_index = 2.20
+- coarse_mesh = 10 10 5
+- fine_mesh = 100 100 50
+- num_wann = 50
+- wannier_valence_count = 30
+- wannier_conduction_count = 20
+- dipole_valence_start = 26
+- scissor_shift = 0.8792920277580205 eV
+
+远端作业
+- 114675773 V2O5_Bopt: COMPLETED 0:0
+- 114675775 V2O5_Bwgen: COMPLETED 0:0
+- 114677416 V2O5_Bw90: COMPLETED 0:0
+
+本地关键输出
+- 6_hdf5/OUTPUT/V2O5_recomb/V2O5_B_result.json
+- 6_hdf5/OUTPUT/V2O5_recomb/wannier90.wout
+- 6_hdf5/OUTPUT/V2O5_recomb/EIGENVAL
+- 6_hdf5/OUTPUT/V2O5_recomb/OUTCAR
+- remote_outputs/V2O5_recomb_optics/WAVEDER
+- remote_outputs/V2O5_recomb_wannier/wannier90_hr.dat

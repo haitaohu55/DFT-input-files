@@ -1,0 +1,12 @@
+     18   irreducible k-points
+ 56 96   ivbm, nb
+       9    0.1593443388097   evbm_idx, evbm (Ha)
+       0    0.2289777665115   ecbm_idx, ecbm (Ha)
+  1.481847434769048E-005  1.000000000000000E+020    density (au, cm3)
+  9.500489042010000E-004   300.000000000000         temperature (Ha, K)
+      4     18   e_occ_ful, e_total
+        -1.708729897443029E-03         5.891661336164977E-03      elec E_fermi, E_cutoff (Ha)
+     10     10     18   h_occ_irr, h_occ_ful, h_total
+         4.215609548478050E-03        -3.384781685129956E-03      hole E_fermi, E_cutoff (Ha)
+     18   k4 eeh
+     18   k4 hhe

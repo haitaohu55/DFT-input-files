@@ -1,0 +1,36 @@
+A_ind summary for VBM -> CBM intervalley transition
+source_gcv_table = /Users/huhaitao/Desktop/code/Material/19.V2O5/8_cvq/gcv_table.dat
+temperature_K = 300.0
+phonon_branches = 42
+composition = {'O': 10, 'V': 4}
+cell_mass_amu = 363.76000000
+cell_mass_kg = 6.040376908664e-25
+cell_volume_A3 = 175.718496117993
+
+Formula evaluated:
+A_ind,total = 5.3464012e-4 * F0^(5/2) * sum_nu[(1+2N_nu)*D_nu^2/epsilon_nu]
+D_nu(eV/cm) = |g_nu(eV)| * sqrt(2*M_cell*epsilon_nu(J)) / hbar / 100
+
+sum_all_branches_A_coeff_per_F0_5_2 = 6.919558033498e+15
+max_A_contribution_branch = nu=5, phonon_meV=16.378678644590, Nph=1.130839931687e+00, |g|=2.819123061865e-02 eV, D=1.505149083718e+08 eV/cm, A_coeff/F0^(5/2)=2.412031932964e+15, fraction=3.485817911039e-01
+max_abs_g_branch = nu=19, phonon_meV=66.714059766400, Nph=8.193190463370e-02, |g|=4.002518227319e-02 eV, D=4.312886770376e+08 eV/cm, A_coeff/F0^(5/2)=1.734931980683e+15, fraction=2.507287275117e-01
+
+Top branches by A contribution:
+nu= 5  phonon_meV=   16.378679  Nph=1.130840e+00  |g|=2.819123e-02 eV  D=1.505149e+08 eV/cm  A_coeff/F0^(5/2)=2.412032e+15  frac=3.485818e-01
+nu=19  phonon_meV=   66.714060  Nph=8.193190e-02  |g|=4.002518e-02 eV  D=4.312887e+08 eV/cm  A_coeff/F0^(5/2)=1.734932e+15  frac=2.507287e-01
+nu=24  phonon_meV=   77.270602  Nph=5.300816e-02  |g|=3.704012e-02 eV  D=4.295420e+08 eV/cm  A_coeff/F0^(5/2)=1.411952e+15  frac=2.040524e-01
+nu= 7  phonon_meV=   25.893093  Nph=5.805158e-01  |g|=1.705224e-02 eV  D=1.144720e+08 eV/cm  A_coeff/F0^(5/2)=5.847058e+14  frac=8.450046e-02
+nu=37  phonon_meV=  157.827390  Nph=2.236592e-03  |g|=1.882889e-02 eV  D=3.120627e+08 eV/cm  A_coeff/F0^(5/2)=3.313609e+14  frac=4.788759e-02
+nu=12  phonon_meV=   36.749667  Nph=3.181169e-01  |g|=1.040342e-02 eV  D=8.320108e+07 eV/cm  A_coeff/F0^(5/2)=1.647826e+14  frac=2.381404e-02
+nu=40  phonon_meV=  198.143397  Nph=4.693980e-04  |g|=1.281699e-02 eV  D=2.380137e+08 eV/cm  A_coeff/F0^(5/2)=1.530007e+14  frac=2.211135e-02
+nu=30  phonon_meV=   84.377674  Nph=3.976040e-02  |g|=9.711553e-03 eV  D=1.176870e+08 eV/cm  A_coeff/F0^(5/2)=9.473753e+13  frac=1.369127e-02
+nu=34  phonon_meV=  101.787320  Nph=1.988845e-02  |g|=5.305922e-03 eV  D=7.062099e+07 eV/cm  A_coeff/F0^(5/2)=2.723802e+13  frac=3.936382e-03
+nu=16  phonon_meV=   48.593847  Nph=1.801315e-01  |g|=1.620483e-03 eV  D=1.490257e+07 eV/cm  A_coeff/F0^(5/2)=3.323727e+12  frac=4.803380e-04
+
+Optional numerical substitution:
+F0_candidate_from_5_meff_m_r_parallel = 1.160597
+F0_candidate^(5/2) = 1.451120939869e+00
+A_total_if_F0_candidate = 1.004111555705e+16
+A_max_branch_if_F0_candidate = 3.500150045558e+15
+
+table = /Users/huhaitao/Desktop/code/Material/19.V2O5/8_cvq/A_ind_table.dat
